@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="#2972B7"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageSlider"
+            app:iss_period="1000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_corner_radius="30" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/butonlarLayout"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/VideoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#2D9884"
+                android:drawableEnd="@drawable/video_file_24"
+                android:padding="12dp"
+                android:layout_marginRight="20dp"
+                android:text="VİDEO"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:cornerRadius="30dp">
+            </Button>
+            <Button
+                android:id="@+id/DetayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#2D9884"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/video_file_24"
+                android:padding="12dp"
+                android:text="DETAYLI\nBİLGİ"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:cornerRadius="30dp">
+            </Button>
+            <Button
+                android:id="@+id/KUBButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#2D9884"
+                android:drawableEnd="@drawable/video_file_24"
+                android:padding="12dp"
+                android:text="KUB"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:cornerRadius="30dp">
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:id="@+id/AciklamaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/text1"
+                android:layout_height="match_parent"
+                android:text="Bu ilaç hakkındaki bilgiler çok önemlidir."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
